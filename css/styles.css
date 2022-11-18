@@ -1,0 +1,115 @@
+/* Обнуление */
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+ul,
+ol,
+li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+/* ___________________________________________________________________________________________________________________________________________________ */
+:root {
+  --iris: #4d5ae5;
+  --subtle-text: #8e8f99;
+  --text: #434455;
+  --light: #f5f4fa;
+  --dark: #2e2f42;
+  --accent: #e7e9fc;
+  --success: #31d0aa;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  color: var(--dark);
+}
+
+/* _____________Header_____________________ */
+
+.navigation {
+  display: flex;
+}
+.nav-list {
+  display: flex;
+}
+.logo{
+    color: var(--dark);
+}
+.logo:hover{
+    color: var(--text);
+}
+.logo:focus{
+    color: var(--iris);
+}
+.web {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 21px;
+  text-transform: uppercase;
+}
+.studio {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 21px;
+  text-transform: uppercase;
+}
+.nav-contacts{
+    display: flex;
+    color: var(--dark);
+    cursor: pointer;
+}
+.navigation-item:hover{
+color: var(--text);
+}
+.navigation-item:focus{
+color: var(--iris);
+}
+.contacts-item1{
+  display: inline-block;
+  cursor: pointer;
+
+}
+.contacts-item1:hover{
+color: var(--text);
+}
+.contacts-item1:focus{
+color: var(--iris);
+}
+.contacts-item2{
+display: inline-block;
+cursor: pointer;
+
+}
+.contacts-item2:hover{
+color: var(--text);
+}
+.contacts-item2:focus{
+color: var(--iris);
+}
+/* __________________Portfolio_________________ */
+.main-h2 {
+  color: transparent;
+  font-size: 0;
+}
