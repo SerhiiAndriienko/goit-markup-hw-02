@@ -41,8 +41,12 @@ body {
   font-family: "Roboto", "Raleway", sans-serif;
   color: var(--dark);
 }
+.container{
+  width: 1440px;
+}
 
 /* __________________________________________Header_____________________ */
+
 
 .navigation {
   display: flex;
@@ -161,7 +165,7 @@ body {
   margin-top: 48px;
   margin-left: 635px;
 }
-.order-button:active {
+.order-button:focus {
   background-color: #404bbf;
   border: none;
 }
@@ -185,6 +189,7 @@ body {
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
 }
 .feature-text {
   font-weight: 400;
@@ -194,7 +199,6 @@ body {
 }
 .what-we-do {
   width: 1170px;
-  height: 386px;
   margin-top: 120px;
 }
 
@@ -202,36 +206,47 @@ body {
   font-weight: 600;
   font-size: 36px;
   line-height: 1.11;
-  text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
+  margin-left: 559px;
 }
 .what-we-do-cards {
   display: flex;
   margin-top: 72px;
+  margin-left: 156px;
 }
 .what-we-do-img {
   display: inline-block;
 }
+.what-we-do-card:not(:last-child) {
+  margin-right: 24px;
+}
 .our-team {
   width: 1440px;
   height: 732px;
-  background-color: var(--accent);
+  background-color: var(--light);
   margin-top: 120px;
 }
 .our-team-title {
   font-weight: 600;
   font-size: 36px;
   line-height: 1.11;
-  text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
+  padding-top: 120px;
+  padding-bottom: 120px;
+  margin-left: 639px;
 }
 .our-team-list {
   display: flex;
 }
 .our-team-cards {
   background-color: #fff;
+
+  height: 380px;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
 }
 .what-we-do-cards:not(:last-child) {
   margin-right: 24px;
@@ -246,6 +261,8 @@ body {
   line-height: 1.2;
   text-align: center;
   letter-spacing: 0.02em;
+  margin-top: 32px;
+  margin-bottom: 8px;
 }
 .our-team-position {
   color: var(--text);
@@ -254,20 +271,31 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
 }
+.our-team-cards:first-child {
+  margin-left: 156px;
+}
+.our-team-cards:not(:last-child) {
+  margin-right: 24px;
+}
 
 /* ___________________________________________Portfolio_________________ */
 .main-content-potrtfolio {
   width: 1440px;
+  margin-left: 156px;
+  margin-top: 94px;
+  margin-right: 0px;
+
 }
 .main-title {
   color: transparent;
   font-size: 0;
 }
+
 .filters {
   display: flex;
-  width: 586px;
-  margin-left: auto;
-  margin-right: auto;
+  width: 426px;
+  margin-left: 271px;
+  /* margin-right: auto; */
   margin-top: 96px;
   margin-bottom: 72px;
 }
@@ -313,12 +341,7 @@ body {
   height: 48px;
   margin-right: 0px;
 }
-.project-name {
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-}
+
 .project-type {
   font-size: 16px;
   line-height: 1.5;
@@ -328,7 +351,33 @@ body {
 .card-list {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  width: 1128px;
 }
+.portfolio-card {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+  width: 360px;
+  height: 420px;
+    display: inline-block;
+  margin-bottom: 48px;
+}
+
+.project-name {
+  padding-top: 32px;
+  padding-left: 16px;
+  padding-bottom: 8px;
+font-weight: 600;
+font-size: 20px;
+line-height: 1.2;
+letter-spacing: 0.02em;
+  color: var(--dark);
+}
+.project-type{
+  padding-left: 16px;
+}
+
+
+
+
 /* _____________________Footer_________________ */
 footer {
   background-color: var(--dark);
@@ -340,6 +389,14 @@ footer {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--light);
+  width: 264px;
+  margin-left: 156px;
+  margin-top: 16px;
+}
+.logo-footer {
+  margin-top: 100px;
+  margin-left: 156px;
+  display: inline-block;
 }
 .studio-footer {
   color: var(--light);
