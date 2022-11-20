@@ -42,12 +42,13 @@ body {
   font-family: "Roboto", "Raleway", sans-serif;
   color: var(--dark);
 }
-.container{
+.container {
   width: 1440px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 /* __________________________________________Header_____________________ */
-
 
 .navigation {
   display: flex;
@@ -137,23 +138,21 @@ body {
 
 .main-info {
   background-color: var(--dark);
-  height: 603px;
-  width: 1440px;
-}
+  
+} 
 .main-text {
-  width: 492px;
+  width: 496px;
   color: var(--light);
   font-weight: 600;
   font-size: 56px;
   line-height: 1.07;
   text-align: center;
   letter-spacing: 0.02em;
-  margin-left: 494px;
+  margin-left: 474px;
   padding-top: 192px;
+
 }
 .order-button {
-  width: 170px;
-  height: 51px;
   background-color: var(--iris);
   color: var(--light);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -165,6 +164,8 @@ body {
   letter-spacing: 0.04em;
   margin-top: 48px;
   margin-left: 635px;
+  margin-bottom: 192px;
+  padding: 16px 32px;
 }
 .order-button:focus {
   background-color: #404bbf;
@@ -281,11 +282,9 @@ body {
 
 /* ___________________________________________Portfolio_________________ */
 .main-content-potrtfolio {
-  width: 1440px;
   margin-left: 156px;
   margin-top: 94px;
   margin-right: 0px;
-
 }
 .main-title {
   color: transparent;
@@ -358,7 +357,7 @@ body {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
   width: 360px;
   height: 420px;
-    display: inline-block;
+  display: inline-block;
   margin-bottom: 48px;
 }
 
@@ -366,18 +365,15 @@ body {
   padding-top: 32px;
   padding-left: 16px;
   padding-bottom: 8px;
-font-weight: 600;
-font-size: 20px;
-line-height: 1.2;
-letter-spacing: 0.02em;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
   color: var(--dark);
 }
-.project-type{
+.project-type {
   padding-left: 16px;
 }
-
-
-
 
 /* _____________________Footer_________________ */
 footer {
